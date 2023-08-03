@@ -1,0 +1,21 @@
+{
+  "name": "personal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^10.13.1",
+    "next": "^13.4.12",
+    "next-intl": "^2.19.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.4.4",
+    "@types/react": "18.2.15",
+    "typescript": "5.1.6"
+  }
+}
