@@ -1,0 +1,26 @@
+.container{
+    width: 40px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 57px;
+}
+
+.current-lang{
+    background-color: #313131;
+    height: 20px;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+.menu{
+    position: relative;
+    background-color: #313131d6;
+    border-radius:0 0 3px 3px;
+    top: -56px;
+}   
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}

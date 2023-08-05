@@ -1,8 +1,17 @@
 {
   "Index": {
-    "title": "Hello world!sd"
+    "title": "Hello world! I am Reza"
   },
   "Cv": {
     "title": "Not more than test text"
+  },
+  "SideBar":{
+    "name":"Reza Bahmani",
+    "position":"Web Programmer",
+    "birthDay":"2006 February 24",
+    "location":"Tehran , Iran",
+    "email":"rezabahmani.dev@gmail.com",
+    "phone":"09190618839",
+    "downloadCv":"Download Cv"
   }
 }
