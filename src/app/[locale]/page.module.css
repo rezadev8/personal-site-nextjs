@@ -1,3 +1,18 @@
 .container{
-    
+    position: relative;
+}
+
+.title{
+    position: relative;
+}
+
+.title::before{
+    content: '';
+    background-color: #304CFD;
+    border-radius: 0.5rem;
+    height: 0.3125rem;
+    position: absolute;
+    margin-bottom: -10px;
+    width: 3.125rem;
+    z-index: 1;
 }

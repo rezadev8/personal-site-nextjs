@@ -27,22 +27,22 @@ const Profile = () => {
                     </div>
                 </section>
                 <section className={'d-flex align-items-center flex-dir-column justify-content-around ' + ProfileStyle["sec-2"]}>
-                    <div className={'d-flex align-items-end flex-dir-column ' + ProfileStyle['infos-parent']}>
+                    <div className={'d-flex align-items-start flex-dir-column ' + ProfileStyle['infos-parent']}>
                         <div className={ProfileStyle['info-parent']}>
-                            <span>{translations('birthDay')}</span>
                             <i className="fa-thin fa-calendar-lines fa-lg"></i>
+                            <span>{translations('birthDay')}</span>
                         </div>
                         <div className={ProfileStyle['info-parent']}>
-                            <span>{translations('location')}</span>
                             <i className="fa-thin fa-location-pin fa-lg"></i>
+                            <span>{translations('location')}</span>
                         </div>
                         <div className={ProfileStyle['info-parent']}>
-                            <span>{translations('email')}</span>
                             <i className="fa-thin fa-envelope fa-lg"></i>
+                            <span>{translations('email')}</span>
                         </div>
                         <div className={ProfileStyle['info-parent']}>
-                            <span>{translations('phone')}</span>
                             <i className="fa-thin fa-mobile-notch fa-lg"></i>
+                            <span>{translations('phone')}</span>
                         </div>
                     </div>
                     <motion.button 
