@@ -1,0 +1,17 @@
+.container{
+    padding: 18px;
+    box-shadow: var(--box_shadow);
+    background-color: #fff;
+    border-radius: var(--border_radius);
+    width: 43%;
+    margin-top: 20px;
+}
+
+.sec-2{
+    margin: 0 17px;
+    margin-top: -24px;
+}
+
+.text{
+    margin-top: -3px;
+}

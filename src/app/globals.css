@@ -38,14 +38,15 @@ body {
   margin: auto;
   background-color: #f5f6f7;
   font-family: Estedad;
-  color:var(--text);
+  color: var(--text);
 }
 
 :root {
   --theme: #304cfd;
   --border_radius: 13px;
   --box_shadow: 0 2.5rem 3.125rem rgba(103, 118, 128, 0.1);
-  --text:#44566c;
+  --text: #44566c;
+  --main_padding: 10px 25px;
 }
 
 /*! Global Css Start */
@@ -109,7 +110,7 @@ body {
   flex-direction: column !important;
 }
 
-.flex-dir-column-reverse{
+.flex-dir-column-reverse {
   flex-direction: column-reverse !important;
 }
 
@@ -163,11 +164,39 @@ body {
 
 /** Flex End */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.8;
 }
 
-.title-h1{
+.title-h1 {
   font-size: 2rem;
+}
+
+.title-h2{
+  font-size: 1.7rem;
+}
+
+.title-line{
+  position: relative;
+}
+
+.title-line::before {
+  content: "";
+  background-color: #304cfd;
+  border-radius: 0.5rem;
+  height: 0.3125rem;
+  position: absolute;
+  margin-bottom: -10px;
+  width: 3.125rem;
+  z-index: 1;
+}
+
+.line-heigth-0{
+  line-height: 0 !important;
 }
