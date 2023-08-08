@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import IndexStyle from "./page.module.css";
 import SimpleBox from "@/components/boxs/simple_box/simple_box";
+import CommentBox from "@/components/boxs/comment_box/comment_box";
 
 const skils : any = [
   {
@@ -64,6 +65,18 @@ export default function Index() {
         </h2>
         <div className="d-flex align-items-center justify-content-around flex-wrap">
           {skils.map((skil:any) => <SimpleBox key={skil.icon} icon={skil.icon} text={skil[useLocale()].desc} title={skil[useLocale()].title} iconAlt={skil.iconAlt} />)}
+        </div>
+      </section>
+      <section className={IndexStyle["sec-2"]}>
+        <h2
+          className={
+            "d-flex flex-dir-column-reverse title-h2 line-heigth-0 mt-1 " + IndexStyle.title
+          }
+        >
+          {translations("title3")}
+        </h2>
+        <div className="d-flex align-items-center justify-content-around flex-wrap">
+          {skils.map((skil:any) => <CommentBox key={skil.icon} icon={skil.icon} text={skil[useLocale()].desc} title={skil[useLocale()].title} iconAlt={skil.iconAlt} />)}
         </div>
       </section>
     </>

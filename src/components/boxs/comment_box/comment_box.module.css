@@ -1,0 +1,27 @@
+.container {
+  padding: 18px;
+  box-shadow: var(--box_shadow);
+  background-color: #fff;
+  border-radius: var(--border_radius);
+  width: 43%;
+  margin-top: 50px;
+}
+
+.avatar-hexagon {
+    position: relative;
+    top: -50px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+  border-radius: 8px;
+}
+
+.sec-2 {
+  margin: 0 17px;
+  margin-top: -24px;
+}
+
+.text {
+  margin-top: -3px;
+}

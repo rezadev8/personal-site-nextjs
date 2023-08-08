@@ -200,3 +200,8 @@ h6 {
 .line-heigth-0{
   line-height: 0 !important;
 }
+
+a{
+  text-decoration: none;
+  color: var(--text);
+}

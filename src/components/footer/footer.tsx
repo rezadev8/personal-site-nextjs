@@ -1,6 +1,6 @@
 "use client"
 
-import { useTranslations } from "next-intl";
+import { useTranslations  , useLocale} from "next-intl";
 
 const Footer = () => {
   const translations = useTranslations("Footer");
@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
         <footer style={{marginTop:30}}>
-            {translations('title')} <b>{'<Reza/>'}</b>
+            {translations('title')} <a target="_blank" href="https://t.me/Rezadev"><b>{useLocale() === "en" ? "<Reza/>" : "</Reza>"}</b></a>
         </footer>
         </>
     );

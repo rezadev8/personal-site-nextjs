@@ -22,7 +22,7 @@ const Profile = () => {
                         <div className={"d-flex align-items-center justify-content-between " + ProfileStyle['profile-socials']}>
                             <a href="https://instagram.com/rezadev" target="_blank"><i className="fab fa-instagram"></i></a>
                             <a href="https://github.com/rezadev8" target="_blank"><i className="fab fa-github"></i></a>
-                            <a href="https://github.com/rezadev8" target="_blank"><i className="fab fa-telegram"></i></a>
+                            <a href="https://t.me/Rezadev" target="_blank"><i className="fab fa-telegram"></i></a>
                         </div>
                     </div>
                 </section>
