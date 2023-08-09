@@ -12,7 +12,7 @@ const LanguageMenu = () => {
       <div dir="ltr" className={"d-flex align-items-center flex-dir-column " + LanguageMenuStyle.container} >
         <div onClick={() => setIsMenuOpen(!isMuenuOpen)} className={"center cursor-pointer w-100 " + LanguageMenuStyle["current-lang"]}>
           {useLocale()}
-          <i  style={{rotate:isMuenuOpen ? '0deg' : '180deg'}} className="fa-light fa-chevron-down fa-xs"></i>
+          <i  style={{rotate:isMuenuOpen ? '0deg' : '180deg' , marginLeft:3}} className="fa-light fa-chevron-down fa-xs"></i>
         </div>
         <div
           className={
