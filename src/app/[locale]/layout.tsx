@@ -21,6 +21,9 @@ export default async function LocaleLayout({children, params: {locale}}:any) {
  
   return (
     <html dir={locale === "en" ? "ltr" : "rtl"} lang={locale}>
+      <head>
+        <title>RZB CV</title>
+      </head>
       <body className="center">
         <NextIntlClientProvider locale={locale} messages={messages}>
         <div className={'d-flex align-items-start justify-content-around ' + LayoutStyle.container}>

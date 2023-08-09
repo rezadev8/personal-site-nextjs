@@ -2,7 +2,6 @@
 import Link from "next/link";
 import ProfileStyle from "./profile.module.css"
 import {useTranslations} from 'next-intl';
-import { motion } from "framer-motion";
 
 const Profile = () => {
   const translations = useTranslations('SideBar');
@@ -45,9 +44,8 @@ const Profile = () => {
                             <span>{translations('phone')}</span>
                         </div>
                     </div>
-                    <motion.button 
-                    whileTap={{scale:0.9}}
-                    className={'d-flex align-items-center justify-content-around cursor-pointer ' + ProfileStyle['download-btn']}>{translations('downloadCv')}<i className="fa-light fa-arrow-down-to-bracket"></i></motion.button>
+                    <button 
+                    className={'d-flex align-items-center justify-content-around cursor-pointer ' + ProfileStyle['download-btn']}>{translations('downloadCv')}<i className="fa-light fa-arrow-down-to-bracket"></i></button>
                 </section>
             </aside>
         </>

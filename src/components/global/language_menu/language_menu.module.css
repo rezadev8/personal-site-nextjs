@@ -4,6 +4,7 @@
     position: fixed;
     top: -1.5px;
     left: 57px;
+    z-index: 9999;
 }
 
 .current-lang{
@@ -18,6 +19,7 @@
     background-color: #313131;
     border-radius:0 0 3px 3px;
     top: -56px;
+    transition: all 0.2s;
 }   
 
 .menu a {

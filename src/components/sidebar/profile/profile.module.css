@@ -1,10 +1,13 @@
 .parent {
   width: 300px;
   height: 560px;
+  border-radius: var(--border_radius) var(--border_radius) 0 0;
+  box-shadow: var(--box_shadow);
 }
 
-.sec-1 , .sec-2{
-  border-radius: var(--border_radius) var(--border_radius) 0 0; 
+.sec-1,
+.sec-2 {
+  border-radius: var(--border_radius) var(--border_radius) 0 0;
 }
 
 .sec-1 {
@@ -12,21 +15,21 @@
   height: 45%;
 }
 
-.sec-2{
+.sec-2 {
   height: 55%;
   background-color: #f5f8f9;
-  box-shadow: var(--box_shadow);
+  overflow-y: hidden;
 }
 
-.sec-2__parent{
+.sec-2__parent {
   height: 59% !important;
 }
 
-.sec-2__parent h3{
+.sec-2__parent h3 {
   height: 13px;
 }
 
-.profile-img__parent{
+.profile-img__parent {
   height: 90px;
 }
 
@@ -39,51 +42,75 @@
   text-decoration: none;
 }
 
-.profile-name{
+.profile-name {
   color: #44566c;
   text-decoration: none;
 }
 
-.profile-position{
+.profile-position {
   font-size: 0.9375rem;
   font-weight: 400;
   border-radius: 10rem;
   padding: 0.4rem 0.8rem;
-  background-color: #F5F6F7;
-  color: #44566C;
+  background-color: #f5f6f7;
+  color: #44566c;
 }
 
-.profile-socials{
-  color: #44566C !important;
+.profile-socials {
+  color: #44566c !important;
 }
 
-.profile-socials a{
-  color: #44566C !important;
+.profile-socials a {
+  color: #44566c !important;
   margin-left: 10px;
 }
 
-.infos-parent{
+.infos-parent {
   width: 90%;
-  color: #44566C !important;
+  color: #44566c !important;
   margin-top: -15px;
 }
 
-.info-parent{
+.info-parent {
   margin-top: 17px;
 }
 
-.info-parent span{
+.info-parent span {
   margin: 0 8px;
 }
 
-.download-btn{
+.download-btn {
   background-color: var(--theme);
   border: none;
-  border-radius:20px ;
-  padding: 0.70rem 1.7rem;
+  border-radius: 20px;
+  padding: 0.7rem 1.7rem;
   font-size: 1rem;
   color: #fff;
   font-family: Estedad;
   width: 68%;
   margin-top: -10px;
+}
+
+@media only screen and (max-width: 1330px) {
+  .parent {
+    width: 100%;
+  }
+
+  .infos-parent{
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .download-btn{
+    justify-content: center;
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .parent {
+    width: 80%;
+  }
+
 }

@@ -1,12 +1,28 @@
-.container{
-    padding-top:10rem;
+.container {
+  padding-top: 10rem;
 }
 
-.main{
-    width:60rem;
-    background-color: #fff;
-    box-shadow: var(--box_shadow);
-    border-radius:var(--border_radius);
-    margin: 0 25px;
+.main {
+  width: 60rem;
+  background-color: #fff;
+  box-shadow: var(--box_shadow);
+  border-radius: var(--border_radius);
+  margin: 0 25px;
 }
 
+@media only screen and (max-width: 1330px) {
+    .container{
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .main{
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .main{
+        width: 80% !important;
+    }
+}

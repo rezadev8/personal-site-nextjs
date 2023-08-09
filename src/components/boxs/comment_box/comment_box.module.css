@@ -2,8 +2,8 @@
   padding: 18px;
   box-shadow: var(--box_shadow);
   background-color: #f5f8f9;
-  border-radius: var(--border_radius);
   margin-top: 50px;
+  border-radius: 20px;
   height: 100%;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .sec-2 {
-  margin: 0 17px;
+  margin: 0 42px;
   margin-top: -24px;
 }
 

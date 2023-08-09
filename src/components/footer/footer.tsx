@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <>
-        <footer style={{marginTop:30}}>
+        <footer style={{marginTop:30 , marginBottom:20}}>
             {translations('title')} <a target="_blank" href="https://t.me/Rezadev"><b>{useLocale() === "en" ? "<Reza/>" : "</Reza>"}</b></a>
         </footer>
         </>
