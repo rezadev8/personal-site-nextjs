@@ -1,9 +1,17 @@
 "use client";
 
+import 'swiper/css';
+import 'swiper/css/pagination';
 import { useTranslations, useLocale } from "next-intl";
 import IndexStyle from "./page.module.css";
 import SimpleBox from "@/components/boxs/simple_box/simple_box";
 import CommentBox from "@/components/boxs/comment_box/comment_box";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+
+
+// Import Swiper styles
 
 const skils : any = [
   {
@@ -16,6 +24,18 @@ const skils : any = [
       desc:"توسعه وب با استفاده از جدیدترین کتابخانه ها و فریمورک های جاوا اسکریپت",
     },
     icon:"/img/icons/web-dev.png",
+    iconAlt:""
+  },
+  {
+    en:{
+      title: "Mobile application developer",
+      desc: "Mobile developer using React Native for ios and Android",
+    },
+    fa:{
+      title:"توسعه‌دهنده برنامه‌های موبایل",
+      desc:"توسعه دهنده برنامه موبایل با استفاده از React Native برای ios و Android",
+    },
+    icon:"/img/icons/phone.png",
     iconAlt:""
   },
   {
@@ -64,10 +84,10 @@ export default function Index() {
           {translations("title2")}
         </h2>
         <div className="d-flex align-items-center justify-content-around flex-wrap">
-          {skils.map((skil:any) => <SimpleBox key={skil.icon} icon={skil.icon} text={skil[useLocale()].desc} title={skil[useLocale()].title} iconAlt={skil.iconAlt} />)}
+          {skils.map((skil:any , i:number) => <SimpleBox key={i} icon={skil.icon} text={skil[useLocale()].desc} title={skil[useLocale()].title} iconAlt={skil.iconAlt} />)}
         </div>
       </section>
-      <section className={IndexStyle["sec-2"]}>
+      <section className={IndexStyle["sec-1"]}>
         <h2
           className={
             "d-flex flex-dir-column-reverse title-h2 line-heigth-0 mt-1 " + IndexStyle.title
@@ -75,9 +95,17 @@ export default function Index() {
         >
           {translations("title3")}
         </h2>
-        <div className="d-flex align-items-center justify-content-around flex-wrap">
-          {skils.map((skil:any) => <CommentBox key={skil.icon} icon={skil.icon} text={skil[useLocale()].desc} title={skil[useLocale()].title} iconAlt={skil.iconAlt} />)}
-        </div>
+        <Swiper
+        slidesPerView={2}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="d-flex align-items-center justify-content-around flex-wrap"
+      >
+          {skils.map((skil:any , i:number) => <SwiperSlide className='d-flex align-items-start justify-content-between'   key={i}><CommentBox  icon={skil.icon} text={skil[useLocale()].desc} title={skil[useLocale()].title} iconAlt={skil.iconAlt} /></SwiperSlide>)}
+      </Swiper>
       </section>
     </>
   );

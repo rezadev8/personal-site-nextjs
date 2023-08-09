@@ -1,15 +1,15 @@
 .container {
   padding: 18px;
   box-shadow: var(--box_shadow);
-  background-color: #fff;
+  background-color: #f5f8f9;
   border-radius: var(--border_radius);
-  width: 43%;
   margin-top: 50px;
+  height: 100%;
 }
 
 .avatar-hexagon {
-    position: relative;
-    top: -50px;
+  position: relative;
+  top: -50px;
   width: 70px;
   height: 70px;
   position: relative;

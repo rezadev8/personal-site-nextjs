@@ -14,12 +14,6 @@ const CommentBox = ({
 }) => {
   return (
     <>
-      <div
-        className={
-          "d-flex align-items-start justify-content-between  " +
-          CommentBoxStyle.container
-        }
-      >
         <section>
                 <img className={CommentBoxStyle['avatar-hexagon']} src={"https://v3dboy.ir/previews/wordpress/paydar/wp-content/uploads/2021/06/avatar-4-160x160.jpg"} width={70} height={70} alt={iconAlt} />
         </section>
@@ -35,7 +29,6 @@ const CommentBox = ({
             </div>
           <p className={CommentBoxStyle.text}>{text}</p>
         </section>
-      </div>
     </>
   );
 };
