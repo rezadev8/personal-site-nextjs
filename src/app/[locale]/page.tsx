@@ -57,28 +57,24 @@ export default function Index() {
         >
           {translations("title3")}
         </h2>
-        <div style={{minWidth:"100%"}}>
         <Swiper
         breakpoints={{
-          576: {
-            // width: 576,
-            slidesPerView: 1,
+          1020:{
+            slidesPerView:2
           },
-          768: {
-            // width: 768,
-            slidesPerView: 2,
-          },
+          100:{
+            slidesPerView:1
+          }
         }}
-        slidesPerView={'auto'}
         spaceBetween={20}
         pagination={{
+          clickable:true
         }}
         modules={[Pagination]}
         className="d-flex align-items-center justify-content-around flex-wrap"
       >
           {comments.map((skil:any , i:number) => <SwiperSlide key={i}><CommentBox  icon={skil.avatar} text={skil[useLocale()].comment} title={skil[useLocale()].title} iconAlt={'avatar'} /></SwiperSlide>)}
       </Swiper>
-        </div>
       </section>
     </>
   );

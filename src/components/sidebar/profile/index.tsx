@@ -19,7 +19,7 @@ const Profile = () => {
                              {translations('position')}
                         </div>
                         <div className={"d-flex align-items-center justify-content-between " + ProfileStyle['profile-socials']}>
-                            <a href="https://instagram.com/rezadev" target="_blank"><i className="fab fa-instagram"></i></a>
+                            <a href="https://instagram.com/rezadev8" target="_blank"><i className="fab fa-instagram"></i></a>
                             <a href="https://github.com/rezadev8" target="_blank"><i className="fab fa-github"></i></a>
                             <a href="https://t.me/Rezadev" target="_blank"><i className="fab fa-telegram"></i></a>
                         </div>
@@ -44,8 +44,8 @@ const Profile = () => {
                             <span>{translations('phone')}</span>
                         </div>
                     </div>
-                    <button 
-                    className={'d-flex align-items-center justify-content-around cursor-pointer ' + ProfileStyle['download-btn']}>{translations('downloadCv')}<i className="fa-light fa-arrow-down-to-bracket"></i></button>
+                    <a href="/my-cv.pdf" 
+                    className={'d-flex align-items-center justify-content-around cursor-pointer ' + ProfileStyle['download-btn']}>{translations('downloadCv')}<i className="fa-light fa-arrow-down-to-bracket"></i></a>
                 </section>
             </aside>
         </>

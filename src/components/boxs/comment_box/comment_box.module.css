@@ -18,10 +18,16 @@
 }
 
 .sec-2 {
-  margin: 0 42px;
+  margin: 0 18px;
   margin-top: -24px;
 }
 
 .text {
   margin-top: -3px;
+}
+
+@media only screen and (max-width: 520px) {
+  .sec-2  {
+    margin: 0 7px;
+  }
 }

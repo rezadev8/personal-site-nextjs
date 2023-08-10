@@ -47,8 +47,6 @@ body {
   --box_shadow: 0 2.5rem 3.125rem rgba(103, 118, 128, 0.1);
   --text: #44566c;
   --main_padding: 10px 25px;
-  /* --swiper-pagination-color: var(--swiper-theme-color); */
-  /* --swiper-pagination-color:var(--theme); */
 }
 
 /*! Global Css Start */
