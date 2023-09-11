@@ -9,7 +9,7 @@ export const skils: any = [
       desc: "توسعه وب با استفاده از جدیدترین کتابخانه ها و فریمورک های جاوا اسکریپت",
     },
     icon: "/img/icons/web-dev.png",
-    iconAlt: "",
+    iconAlt: "Web Development",
   },
   {
     en: {
@@ -21,7 +21,7 @@ export const skils: any = [
       desc: "توسعه دهنده برنامه موبایل با استفاده از React Native برای ios و Android",
     },
     icon: "/img/icons/phone.png",
-    iconAlt: "",
+    iconAlt: "Mobile application developer",
   }
 ];
 

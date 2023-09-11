@@ -6,13 +6,9 @@ import { useTranslations, useLocale } from "next-intl";
 import IndexStyle from "./page.module.css";
 import SimpleBox from "@/components/boxs/simple_box/simple_box";
 import CommentBox from "@/components/boxs/comment_box/comment_box";
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { comments, skils } from '@/data/main';
-
-
-// Import Swiper styles
 
 export default function Index() {
   const translations = useTranslations("Index");
