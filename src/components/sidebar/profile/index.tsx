@@ -39,10 +39,6 @@ const Profile = () => {
                             <i className="fa-thin fa-envelope fa-lg"></i>
                             <span>{translations('email')}</span>
                         </div>
-                        <div className={ProfileStyle['info-parent']}>
-                            <i className="fa-thin fa-mobile-notch fa-lg"></i>
-                            <span>{translations('phone')}</span>
-                        </div>
                     </div>
                     <a href="/my-cv.pdf" 
                     className={'d-flex align-items-center justify-content-around cursor-pointer ' + ProfileStyle['download-btn']}>{translations('downloadCv')}<i className="fa-light fa-arrow-down-to-bracket"></i></a>
